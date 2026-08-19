@@ -1,1 +1,148 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* ============== Logo Colors ============== */
+  --logo-gradient-start: #0d0d16;
+  --logo-gradient-neutral: #18181b;
+  --logo-gradient-mid: #4c1d95;
+  --logo-gradient-bright: #a855f7;
+  --logo-gradient-end: #7c3aed;
+
+  /* =============== Backgrounds ============== */
+
+  --header-bg:
+    radial-gradient(
+      circle at 40% 50%,
+      rgba(124, 58, 237, 0.1),
+      transparent 28%
+    ),
+    linear-gradient(90deg, #f8f7fc 0%, #f1eff8 45%, #f7f6fb 100%);
+  --page-bg: #f8fafc;
+  --separator-bg: #ddd8e8;
+  --backdrop-bg: #000000af;
+
+  /* ================= Texts ================== */
+
+  --text-primary: #0d0d16;
+  --text-secondary: #52525b;
+  --text-muted: #71717a;
+  --text-nav-item: #27272a;
+  --text-nav-item-hover: #7c3aed;
+
+  /* ============== Primary Button ============= */
+
+  --btn-primary-from: #7c3aed;
+  --btn-primary-to: #a855f7;
+  --btn-primary-text: #f8fafc;
+  --btn-primary-from-hover: #8b5cf6;
+  --btn-primary-to-hover: #b46af8;
+  --btn-primary-shadow: rgba(124, 58, 237, 0.35);
+  --btn-primary-shadow-hover: rgba(168, 85, 247, 0.5);
+
+  /* =============== Secondary Button ================ */
+
+  --btn-secondary-bg: #f1eff8;
+  --btn-secondary-text: #272334;
+  --btn-secondary-border: #ddd9e8;
+  --btn-secondary-bg-hover: #e8e3f3;
+  --btn-secondary-text-hover: #151522;
+  --btn-secondary-border-hover: #a855f7;
+
+  /* ================== Outline Button ================ */
+
+  --btn-outline-text: #7c3aed;
+  --btn-outline-border: #7c3aed;
+  --btn-outline-bg-hover: rgba(124, 58, 237, 0.08);
+  --btn-outline-text-hover: #6d28d9;
+  --btn-outline-border-hover: #6d28d9;
+}
+
+.dark {
+  /* ============== Logo Colors ============== */
+
+  --logo-gradient-start: #f8fafc;
+  --logo-gradient-neutral: #f8fafc;
+  --logo-gradient-mid: #c4b5fd;
+  --logo-gradient-bright: #a855f7;
+  --logo-gradient-end: #7c3aed;
+
+  /* =============== Backgrounds ============== */
+
+  --header-bg:
+    radial-gradient(
+      circle at 40% 50%,
+      rgba(124, 58, 237, 0.1),
+      transparent 28%
+    ),
+    linear-gradient(90deg, #05060b 0%, #080a12 45%, #06070d 100%);
+  --page-bg: #0d0d16;
+  --separator-bg: #2a2638;
+
+  /* ================= Texts ================== */
+
+  --text-primary: #f8fafc;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717f;
+  --text-nav-item: #f8fafc;
+  --text-nav-item-hover: #a855f7;
+
+  /* =============== Secondary Button ================ */
+
+  --btn-secondary-bg: #151522;
+  --btn-secondary-text: #f8fafc;
+  --btn-secondary-border: #2a2a3a;
+  --btn-secondary-bg-hover: #1c1c2b;
+  --btn-secondary-text-hover: #ffffff;
+  --btn-secondary-border-hover: #a855f7;
+
+  /* ================== Outline Button ================ */
+
+  --btn-outline-text: #a855f7;
+  --btn-outline-border: #7c3aed;
+  --btn-outline-bg-hover: rgba(168, 85, 247, 0.1);
+  --btn-outline-text-hover: #c084fc;
+  --btn-outline-border-hover: #a855f7;
+}
+
+@theme inline {
+  /* =============== Backgrounds =============== */
+
+  --color-main-bg: var(--page-bg);
+  --color-separator: var(--separator-bg);
+  --color-backdrop: var(--backdrop-bg);
+
+  /* ================= Texts ================== */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-nav-text: var(--text-nav-item);
+  --color-nav-text-hover: var(--text-nav-item-hover);
+
+  /* ============== Primary Button ===============================*/
+
+  --color-btn-primary-from: var(--btn-primary-from);
+  --color-btn-primary-to: var(--btn-primary-to);
+  --color-btn-primary-text: var(--btn-primary-text);
+  --color-btn-primary-from-hover: var(--btn-primary-from-hover);
+  --color-btn-primary-to-hover: var(--btn-primary-to-hover);
+  --shadow-btn-primary: 0 0 20px var(--btn-primary-shadow);
+  --shadow-btn-primary-hover: 0 0 28px var(--btn-primary-shadow-hover);
+
+  /* =============== Secondary Button ========================= */
+
+  --color-btn-secondary-bg: var(--btn-secondary-bg);
+  --color-btn-secondary-text: var(--btn-secondary-text);
+  --color-btn-secondary-border: var(--btn-secondary-border);
+  --color-btn-secondary-bg-hover: var(--btn-secondary-bg-hover);
+  --color-btn-secondary-text-hover: var(--btn-secondary-text-hover);
+  --color-btn-secondary-border-hover: var(--btn-secondary-border-hover);
+
+  /* ================== Outline Button ================ */
+
+  --color-btn-outline-text: var(--btn-outline-text);
+  --color-btn-outline-border: var(--btn-outline-border);
+  --color-btn-outline-bg-hover: var(--btn-outline-bg-hover);
+  --color-btn-outline-text-hover: var(--btn-outline-text-hover);
+  --color-btn-outline-border-hover: var(--btn-outline-border-hover);
+}
