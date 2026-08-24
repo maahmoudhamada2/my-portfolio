@@ -7,3 +7,6 @@ export { default as About } from "./About";
 export { default as Skills } from "./Skills";
 export { default as MenuClose } from "./MenuClose";
 export { default as Sun } from "./Sun";
+export { default as ChatBubble } from "./ChatBubble";
+export { default as ProjectsExternal } from "./ProjectsExternal";
+export { default as Contact } from "./Contact";

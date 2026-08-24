@@ -2,7 +2,8 @@ import { ClassValue } from "clsx";
 import cn from "../../utils/cn";
 
 const background = {
-  solid: "bg-backdrop",
+  solid: "bg-backdrop-solid",
+  solidLight: "bg-backdrop-solid-light",
   transparent: "transparent",
 };
 
@@ -20,7 +21,7 @@ const Backdrop = ({ bgColor, className, onClick }: BackdropProps) => {
       onClick={onClick}
       className={cn(
         "absolute top-0 left-0",
-        "w-full h-screen",
+        "w-full h-full",
         background[bgColor],
         className,
       )}></div>
