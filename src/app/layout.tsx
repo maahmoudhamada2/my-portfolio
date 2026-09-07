@@ -5,7 +5,7 @@ import "./globals.css";
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html className="dark" lang="en">
-      <body className="bg-main-bg">
+      <body className="bg-main-bg text-body">
         <Header />
         {children}
       </body>

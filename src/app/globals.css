@@ -21,6 +21,13 @@
     ),
     linear-gradient(90deg, #f8f7fc 0%, #f1eff8 45%, #f7f6fb 100%);
   --page-bg: #f8fafc;
+  --section-bg:
+    radial-gradient(
+      circle at 50% 15%,
+      rgba(99, 102, 241, 0.06),
+      transparent 45%
+    ),
+    #f1f5f9;
   --separator-bg: #ddd8e8;
   --backdrop-bg: #000000af;
   --backdrop-solid-light: #00000036;
@@ -30,9 +37,10 @@
   --text-hero-description: #cbd5e1;
   --text-primary: #0d0d16;
   --text-secondary: #52525b;
-  --text-muted: #71717a;
+  --text-muted: #64748b;
   --text-nav-item: #27272a;
   --text-nav-item-hover: #7c3aed;
+  --text-section-title: linear-gradient(90deg, #7c3aed, #315efb);
 
   /* ============== Primary Button ============= */
 
@@ -79,6 +87,91 @@
     0 12px 32px rgba(0, 0, 0, 0.28), 0 0 24px rgba(139, 92, 246, 0.07),
     inset 0 1px 0 rgba(255, 255, 255, 0.045);
   --info-card-border: #a855f729;
+
+  /* =============== Project Card =============== */
+  --project-card-bg:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(99, 102, 241, 0.08),
+      transparent 38%
+    ),
+    linear-gradient(145deg, #ffffff 0%, #f8faff 55%, #f2f5fb 100%);
+
+  --project-card-bg-hover:
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.91))
+      padding-box,
+    linear-gradient(120deg, #315efb, #7c3aed) border-box;
+
+  --project-img-frame-border: #6366f12e;
+  --project-img-frame-shadow:
+    inset 0 0 28px rgba(99, 102, 241, 0.08), 0 16px 35px rgba(76, 81, 140, 0.16);
+  --project-card-border: transparent;
+  --project-card-border-hover: transparent;
+  --project-card-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+  --three-dot-text: #64748b;
+  --three-dot-text-hover: #1e293b;
+
+  --three-dot-bg: #f8fafcd9;
+  --three-dot-border: #64748b29;
+  --three-dot-border-hover: #7c3aed4d;
+  --three-dot-bg-hover: #ffffff;
+
+  --three-dot-list-bg: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.98),
+    rgba(248, 250, 252, 0.98)
+  );
+
+  --three-dot-list-border: #64748b24;
+  --three-dot-list-shadow:
+    0 16px 36px rgba(15, 23, 42, 0.12), inset 0 1px 0 rgba(255, 255, 255, 1);
+
+  --three-dot-list-item-bg-hover: linear-gradient(
+    90deg,
+    rgba(139, 92, 246, 0.1),
+    rgba(59, 130, 246, 0.07)
+  );
+
+  /* ==================== Badge ====================== */
+  --badge-default-bg: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.98),
+    rgba(244, 247, 252, 0.98)
+  );
+
+  --badge-default-border: #64748b3d;
+  --badge-default-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 2px 5px rgba(30, 41, 59, 0.08),
+    0 8px 18px rgba(30, 64, 175, 0.06);
+
+  --badge-default-bg-hover: linear-gradient(145deg, #f1f4ff 0%, #dfe8ff 100%);
+  --badge-default-border-hover: #7c3aed92;
+  --badge-default-shadow-hover: 0 6px 16px rgba(15, 23, 42, 0.08);
+
+  --badge-featured-bg:
+    linear-gradient(90deg, #f4edff 0%, #f3f2ff 52%, #edf5ff 100%) padding-box,
+    linear-gradient(90deg, #9b5de5 0%, #7068dc 48%, #4387e6 100%) border-box;
+
+  --badge-featured-shadow:
+    0 3px 10px rgba(91, 63, 190, 0.12), inset 0 1px 0 rgba(27, 11, 11, 0.85);
+  --badge-featured-text: #31265f;
+
+  /* =========================== Anchors ========================= */
+  --anchor-secondary-bg:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(90deg, #a855f7 0%, #7c3aed 45%, #3b82f6 100%) border-box;
+
+  --anchor-secondary-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 0 18px rgba(59, 130, 246, 0.08);
+
+  --anchor-secondary-bg-hover:
+    linear-gradient(#f8f7ff, #f8f7ff) padding-box,
+    linear-gradient(90deg, #9333ea 0%, #7c3aed 45%, #2563eb 100%) border-box;
+
+  --anchor-secondary-shadow-hover:
+    0 0 18px rgba(124, 58, 237, 0.16), 0 0 26px rgba(59, 130, 246, 0.1);
 }
 
 .dark {
@@ -99,15 +192,29 @@
       transparent 28%
     ),
     linear-gradient(90deg, #05060b 0%, #080a12 45%, #06070d 100%);
+
   --page-bg: #0d0d16;
+  --section-bg:
+    radial-gradient(
+      circle at 50% 20%,
+      rgba(99, 102, 241, 0.06),
+      transparent 45%
+    ),
+    #11131f;
   --separator-bg: #2a2638;
 
   /* ================= Texts ================== */
   --text-primary: #f8fafc;
   --text-secondary: #a1a1aa;
-  --text-muted: #71717f;
+  --text-muted: #8f99b1;
   --text-nav-item: #f8fafc;
   --text-nav-item-hover: #a855f7;
+  --text-section-title: linear-gradient(
+    90deg,
+    #a78bfa 0%,
+    #818cf8 48%,
+    #60a5fa 100%
+  );
 
   /* =============== Secondary Button ================ */
 
@@ -136,6 +243,123 @@
   --info-card-border: #a855f72e;
   --info-card-shadow:
     0 12px 30px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  /* =============== Project Card =============== */
+  --project-card-bg:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(59, 130, 246, 0.14) 0%,
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 0% 100%,
+      rgba(139, 92, 246, 0.1) 0%,
+      transparent 40%
+    ),
+    linear-gradient(135deg, #171a2b 0%, #131725 52%, #10131f 100%);
+
+  --project-card-bg-hover:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(59, 130, 246, 0.12),
+      transparent 36%
+    ),
+    linear-gradient(145deg, #0c1429 0%, #081126 55%, #050c1c 100%);
+
+  --project-img-frame-glow:
+    radial-gradient(
+      85% 75% at 8% 5%,
+      rgba(124, 58, 237, 0.38) 0%,
+      rgba(86, 48, 180, 0.18) 38%,
+      transparent 68%
+    ),
+    radial-gradient(
+      90% 65% at 55% 110%,
+      rgba(37, 75, 255, 0.78) 0%,
+      rgba(63, 52, 210, 0.42) 42%,
+      transparent 75%
+    ),
+    radial-gradient(
+      55% 65% at 105% 80%,
+      rgba(126, 34, 206, 0.3) 0%,
+      transparent 70%
+    ),
+    linear-gradient(145deg, #171637 0%, #0b1024 48%, #11153c 100%);
+  --project-img-frame-border: #818cf82e;
+  --project-img-frame-shadow:
+    inset 0 0 28px rgba(67, 56, 202, 0.14), 0 16px 35px rgba(0, 0, 0, 0.35);
+
+  --project-card-border: #2b3046;
+  --project-card-border-hover: #3b82f6f2;
+  --project-card-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.018);
+  --project-card-shadow-hover:
+    0 0 0 1px rgba(59, 130, 246, 0.55), 0 0 28px rgba(37, 99, 235, 0.18),
+    0 20px 50px rgba(0, 0, 0, 0.28);
+
+  --project-featured-bg: linear-gradient(
+    90deg,
+    rgba(124, 58, 237, 0.28) 0%,
+    rgba(79, 70, 229, 0.22) 55%,
+    rgba(37, 99, 235, 0.18) 100%
+  );
+
+  --three-dot-text: #cbd5e1;
+  --three-dot-text-hover: #ffffff;
+  --three-dot-bg: #070e1eb8;
+  --three-dot-bg-hover: #111831f2;
+  --three-dot-border: #94a3b82e;
+  --three-dot-border-hover: #8b5cf680;
+
+  --three-dot-list-bg: linear-gradient(
+    145deg,
+    rgba(12, 18, 38, 0.98),
+    rgba(7, 13, 28, 0.98)
+  );
+  --three-dot-list-border: #94a3b829;
+  --three-dot-list-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.025);
+
+  --three-dot-list-item-bg-hover: linear-gradient(
+    90deg,
+    rgba(124, 58, 237, 0.18),
+    rgba(37, 99, 235, 0.1)
+  );
+  /* ==================== Badge ====================== */
+  --badge-default-bg: linear-gradient(
+    145deg,
+    rgba(17, 27, 51, 0.92),
+    rgba(8, 16, 34, 0.92)
+  );
+  --badge-default-border: #94a3b824;
+  --badge-default-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.025), 0 6px 14px rgba(0, 0, 0, 0.12);
+  --badge-default-bg-hover: linear-gradient(
+    145deg,
+    rgba(24, 34, 65, 0.96),
+    rgba(10, 19, 42, 0.96)
+  );
+  --badge-default-border-hover: #8b5cf680;
+  --badge-default-shadow-hover: 0 6px 16px rgba(15, 23, 42, 0.08);
+
+  --badge-featured-bg:
+    linear-gradient(90deg, #1c1150 0%, #0d103a 52%, #08112f 100%) padding-box,
+    linear-gradient(90deg, #7437b1 0%, #402da4 48%, #184b9a 100%) border-box;
+  --badge-featured-shadow:
+    0 0 10px rgba(91, 63, 220, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  --badge-featured-text: #c4b5fd;
+
+  /* ========================== Anchors =================== */
+  --anchor-secondary-bg:
+    linear-gradient(#0a1022, #0a1022) padding-box,
+    linear-gradient(90deg, #a855f7 0%, #7c3aed 45%, #3b82f6 100%) border-box;
+  --anchor-secondary-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 0 18px rgba(59, 130, 246, 0.08);
+  --anchor-secondary-bg-hover:
+    linear-gradient(#10172d, #10172d) padding-box,
+    linear-gradient(90deg, #c084fc 0%, #8b5cf6 45%, #60a5fa 100%) border-box;
+  --anchor-secondary-shadow-hover:
+    0 0 18px rgba(124, 58, 237, 0.2), 0 0 26px rgba(59, 130, 246, 0.12);
 }
 
 @theme inline {
@@ -191,9 +415,39 @@
   --text-subheading: var(--text-subheading);
   --text-body: var(--text-body);
   --text-small: var(--text-small);
+
   /* ================= Info Card =============== */
   --shadow-info-card-shadow: var(--info-card-shadow);
   --color-info-card-border: var(--info-card-border);
+
+  /* =============== Project Card =============== */
+  --color-project-card-bg: var(--project-card-bg);
+  --color-project-card-border: var(--project-card-border);
+  --color-project-card-border-hover: var(--project-card-border-hover);
+  --color-pc-img-frame-border: var(--project-img-frame-border);
+  --shadow-pc-img-frame: var(--project-img-frame-shadow);
+  --shadow-project-card-shadow: var(--project-card-shadow);
+  --shadow-project-card-shadow-hover: var(--project-card-shadow-hover);
+  --color-three-dot-text: var(--three-dot-text);
+  --color-three-dot-text-hover: var(--three-dot-text-hover);
+  --color-three-dot-bg: var(--three-dot-bg);
+  --color-three-dot-bg-hover: var(--three-dot-bg-hover);
+  --color-three-dot-border: var(--three-dot-border);
+  --color-three-dot-border-hover: var(--three-dot-border-hover);
+  --color-three-dot-list-border: var(--three-dot-list-border);
+  --shadow-three-dot-list-shadow: var(--three-dot-list-shadow);
+
+  /* ===================== Badges =================== */
+  --shadow-badge-default: var(--badge-default-shadow);
+  --color-badge-default-border: var(--badge-default-border);
+  --color-badge-default-border-hover: var(--badge-default-border-hover);
+
+  --color-badge-featured-text: var(--badge-featured-text);
+  --shadow-featured-badge-shadow: var(--badge-featured-shadow);
+
+  /* =========================== Anchors ========================= */
+  --shadow-anchor-secondary-shadow: var(--anchor-secondary-shadow);
+  --shadow-anchor-secondary-shadow-hover: var(--anchor-secondary-shadow-hover);
 }
 
 @layer components {
@@ -217,7 +471,7 @@
   .bgColorAnimation {
     background-size: 300% auto;
     background-position: 0% center;
-    animation: bgAnimation 5s ease-in-out infinite alternate;
+    animation: bgAnimation 3s ease-in-out infinite alternate;
   }
 }
 

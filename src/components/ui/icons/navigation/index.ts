@@ -10,3 +10,4 @@ export { default as Sun } from "./Sun";
 export { default as ChatBubble } from "./ChatBubble";
 export { default as ProjectsExternal } from "./ProjectsExternal";
 export { default as Contact } from "./Contact";
+export { default as ThreeDot } from "./ThreeDot";
