@@ -24,7 +24,7 @@ const layout = {
 interface BadgeProps {
   layoutKey: keyof typeof layout;
   children?: ReactNode;
-  className?: ClassValue[];
+  className?: string | string[];
 }
 
 const Badge = ({ layoutKey, children, className }: BadgeProps) => {
@@ -32,7 +32,7 @@ const Badge = ({ layoutKey, children, className }: BadgeProps) => {
     <span
       className={cn(
         "flex items-center justify-center gap-1.5",
-        "w-10.5",
+        // "w-10.5",
         "border rounded-lg",
         layout[layoutKey],
         className,

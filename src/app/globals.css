@@ -172,6 +172,35 @@
 
   --anchor-secondary-shadow-hover:
     0 0 18px rgba(124, 58, 237, 0.16), 0 0 26px rgba(59, 130, 246, 0.1);
+
+  /* ======================== About ================ */
+  --about-panel-bg:
+    linear-gradient(#fffffff2, #ffffffe8) padding-box,
+    linear-gradient(120deg, #315efb, #7c3aed) border-box;
+
+  --step-bg: linear-gradient(#f7f3ff, #f7f3ff) padding-box, #9e8cf9 border-box;
+  --step-shadow: 0 4px 12px rgba(105, 69, 231, 0.14);
+
+  --work-flow-frame-bg:
+    radial-gradient(
+      circle at 30% 44%,
+      rgba(124, 58, 237, 0.14),
+      transparent 45%
+    ),
+    linear-gradient(rgba(118, 148, 207, 0.11) 1px, transparent 1px) 0 0 / 19px
+      19px,
+    linear-gradient(90deg, rgba(118, 148, 207, 0.11) 1px, transparent 1px) 0 0 /
+      19px 19px,
+    linear-gradient(135deg, #f9fbff, #edf4ff);
+
+  --practice-card-bg:
+    radial-gradient(circle at 85% 10%, #6366f114, transparent 38%),
+    linear-gradient(145deg, #fff 0%, #f8faff 55%, #f2f5fb 100%);
+  --practice-card-border: #7c3aed1a;
+
+  --about-panel-item-bg: linear-gradient(110deg, #fbfcff, #f4f8ff);
+  --about-panel-item-border: transparent;
+  --about-panel-item-shadow: 0 0 4px 2px #00000012;
 }
 
 .dark {
@@ -360,6 +389,56 @@
     linear-gradient(90deg, #c084fc 0%, #8b5cf6 45%, #60a5fa 100%) border-box;
   --anchor-secondary-shadow-hover:
     0 0 18px rgba(124, 58, 237, 0.2), 0 0 26px rgba(59, 130, 246, 0.12);
+
+  /* ======================== About section =============== */
+  --about-panel-bg:
+    linear-gradient(118deg, #0c1027 0%, #050d20 47%, #020b1a 100%) padding-box,
+    linear-gradient(
+        135deg,
+        #a699c8 0%,
+        #585276 18%,
+        #2d6bad 39%,
+        #1b8cdd 51%,
+        #35435e 100%
+      )
+      border-box;
+
+  --about-panel-shadow:
+    0 16px 38px rgba(0, 0, 0, 0.2), inset 0 0 28px rgba(5, 15, 37, 0.35);
+
+  --about-panel-item-bg: linear-gradient(
+    110deg,
+    rgba(10, 18, 39, 0.48),
+    rgba(3, 11, 26, 0.2)
+  );
+  --about-panel-item-border: #15243f33;
+  --about-panel-item-shadow: 0 0 4px 2px #0000008a;
+
+  --step-bg:
+    linear-gradient(135deg, #111832, #080f22) padding-box,
+    linear-gradient(135deg, #bc3cff, #2a8cff) border-box;
+
+  --step-shadow: 0 0 13px rgba(105, 42, 255, 0.27);
+
+  --work-flow-frame-bg:
+    radial-gradient(
+      circle at 36% 42%,
+      rgba(142, 50, 255, 0.22),
+      transparent 48%
+    ),
+    linear-gradient(rgba(77, 94, 184, 0.12) 1px, transparent 1px) 0 0 / 19px
+      19px,
+    linear-gradient(90deg, rgba(77, 94, 184, 0.12) 1px, transparent 1px) 0 0 /
+      19px 19px,
+    linear-gradient(135deg, #0e1531, #071126);
+
+  --practice-card-bg: #111530;
+  --practice-card-border: #242848;
+}
+
+@theme {
+  --breakpoint-xs: 480px;
+  --breakpoint-about-layout: 1360px;
 }
 
 @theme inline {
@@ -448,6 +527,13 @@
   /* =========================== Anchors ========================= */
   --shadow-anchor-secondary-shadow: var(--anchor-secondary-shadow);
   --shadow-anchor-secondary-shadow-hover: var(--anchor-secondary-shadow-hover);
+
+  /* ======================== About section =============== */
+  --color-practice-card-border: var(--practice-card-border);
+  --color-panel-item-border: var(--about-panel-item-border);
+  --shadow-about-panel-shadow: var(--about-panel-shadow);
+  --shadow-step-shadow: var(--step-shadow);
+  --shadow-about-panel-item-shadow: var(--about-panel-item-shadow);
 }
 
 @layer components {

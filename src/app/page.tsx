@@ -1,3 +1,4 @@
+import AboutSection from "./components/AboutSection";
 import FeaturedProjects from "./components/FeaturedProjects";
 import HeroSection from "./components/HeroSection";
 
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <HeroSection />
       <FeaturedProjects />
+      <AboutSection />
     </>
   );
 };

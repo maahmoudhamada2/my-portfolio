@@ -11,3 +11,5 @@ export { default as ChatBubble } from "./ChatBubble";
 export { default as ProjectsExternal } from "./ProjectsExternal";
 export { default as Contact } from "./Contact";
 export { default as ThreeDot } from "./ThreeDot";
+export { default as More } from "./More";
+export { default as Download } from "./Download";

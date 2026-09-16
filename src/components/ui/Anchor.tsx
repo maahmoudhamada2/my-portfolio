@@ -1,5 +1,6 @@
 import { ComponentProps, ReactNode } from "react";
 import cn from "../../utils/cn";
+import { ClassValue } from "clsx";
 
 const variants = {
   primary: [
@@ -28,6 +29,7 @@ const variants = {
     "hover:text-btn-outline-text-hover",
     "hover:border-btn-outline-border-hover",
   ],
+  ghost: ["text-brand"],
 };
 
 interface AnchorProps extends ComponentProps<"a"> {
@@ -35,7 +37,7 @@ interface AnchorProps extends ComponentProps<"a"> {
   variantKey: keyof typeof variants;
   children: ReactNode;
 }
-const Anchor = ({ href, variantKey, children }: AnchorProps) => {
+const Anchor = ({ href, variantKey, children, className }: AnchorProps) => {
   return (
     <a
       href={href}
@@ -44,6 +46,7 @@ const Anchor = ({ href, variantKey, children }: AnchorProps) => {
         "px-2.5 py-2 md:px-4.5",
         "cursor-pointer rounded-lg text-[14px] font-semibold leading-none",
         variants[variantKey],
+        className,
       )}>
       {children}
     </a>

@@ -2,16 +2,35 @@ const Git = ({ className }: { className?: string }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      viewBox="0 0 48 48"
       role="img"
-      viewBox="0 0 24 24"
+      aria-labelledby="git-title"
+      width="48"
+      height="48"
       className={className}>
-      <title>Git</title>
-      <path
-        fill="#F05032"
-        d="M23.546 10.93 13.067.452a1.55 1.55 0 0 0-2.187 0L8.708 2.627l2.76 2.76a1.84 1.84 0 0 1 1.889.441 1.84 1.84 0 0 1 .438 1.9l2.66 2.66a1.84 1.84 0 0 1 1.903.438 1.842 1.842 0 1 1-3.005.6L12.87 8.944v6.53c.176.086.342.202.488.348a1.842 1.842 0 1 1-2.605 0c.18-.18.387-.316.608-.406V8.835a1.84 1.84 0 0 1-.608-.406 1.84 1.84 0 0 1-.397-2.011L7.636 3.7.452 10.881a1.55 1.55 0 0 0 0 2.188l10.48 10.477a1.55 1.55 0 0 0 2.186 0l10.428-10.43a1.55 1.55 0 0 0 0-2.186Z"
+      <title id="git-title">Git</title>
+      <rect
+        x="9.2"
+        y="9.2"
+        width="29.6"
+        height="29.6"
+        rx="2.5"
+        transform="rotate(45 24 24)"
+        fill="#FF4B2B"
       />
+      <g
+        fill="none"
+        stroke="#142030"
+        strokeWidth="3.2"
+        strokeLinecap="round"
+        strokeLinejoin="round">
+        <path d="m15.5 7.7 16.4 16.4M22 14.2v17.6" />
+      </g>
+      <g fill="#142030">
+        <circle cx="22" cy="15" r="3.3" />
+        <circle cx="22" cy="32" r="3.3" />
+        <circle cx="32" cy="24" r="3.3" />
+      </g>
     </svg>
   );
 };

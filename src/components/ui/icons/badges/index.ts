@@ -1,1 +1,9 @@
 export { default as Star } from "./Star";
+export { default as Monitor } from "./Monitor";
+export { default as Cube } from "./Cube";
+export { default as Lightning } from "./Lightning";
+export { default as Book } from "./Book";
+export { default as Target } from "./Target";
+export { default as User } from "./User";
+export { default as Code } from "./Code";
+export { default as Charts } from "./Charts";
