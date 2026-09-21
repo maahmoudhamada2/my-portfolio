@@ -201,6 +201,7 @@
   --about-panel-item-bg: linear-gradient(110deg, #fbfcff, #f4f8ff);
   --about-panel-item-border: transparent;
   --about-panel-item-shadow: 0 0 4px 2px #00000012;
+  --footer-bg: #f3f5f8;
 }
 
 .dark {
@@ -434,6 +435,8 @@
 
   --practice-card-bg: #111530;
   --practice-card-border: #242848;
+
+  --footer-bg: #0a0b12;
 }
 
 @theme {
@@ -451,6 +454,7 @@
   --color-separator: var(--separator-bg);
   --color-backdrop-solid: var(--backdrop-bg);
   --color-backdrop-solid-light: var(--backdrop-solid-light);
+  --color-footer-bg: var(--footer-bg);
 
   /* ================= Texts ================== */
   --color-hero-eyebrow: var(--text-hero-eyebrow);

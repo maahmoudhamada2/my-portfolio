@@ -42,7 +42,7 @@ const Anchor = ({ href, variantKey, children, className }: AnchorProps) => {
     <a
       href={href}
       className={cn(
-        "inline-flex items-center gap-1.5",
+        "inline-flex justify-center items-center gap-1.5",
         "px-2.5 py-2 md:px-4.5",
         "cursor-pointer rounded-lg text-[14px] font-semibold leading-none",
         variants[variantKey],

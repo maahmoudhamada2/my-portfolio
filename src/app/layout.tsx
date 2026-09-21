@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Header from "../components/Header/Header";
 import "./globals.css";
+import Footer from "../components/Footer/Footer";
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
@@ -8,6 +9,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
       <body className="bg-main-bg text-body">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
